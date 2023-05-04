@@ -22,10 +22,8 @@ def BinarySearch(array, element):
     return first
 
 
-L = [int(x) for x in input("Введите числа в любом порядке, через пробел: ").split()]
+array = [int(x) for x in input("Введите числа в любом порядке, через пробел: ").split()]
 element = int(input("Введите любое целое число: "))
-array = list(map(int, L))
-print(array)
 Bubble(array)
 print(array)
 print(BinarySearch(array, element))
